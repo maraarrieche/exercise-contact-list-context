@@ -44,6 +44,8 @@ const getState = ({ getStore, setStore }) => {
 			editContact: (targetContact, id) => {
 				const store = getStore();
 				const auxContact = store.contactos.find(item => item.id == id);
+				console.log(auxContact);
+				console.log(targetContact);
 				if (auxContact) {
 					auxContact.name = targetContact.name;
 					auxContact.email = targetContact.email;

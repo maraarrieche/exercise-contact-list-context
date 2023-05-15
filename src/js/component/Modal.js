@@ -4,11 +4,8 @@ import PropTypes from "prop-types";
 import { Context } from "../store/appContext.js";
 
 export const Modal = props => {
-	const [state, setState] = useState({
-		//initialize state here
-	});
-
 	const { actions } = useContext(Context);
+	console.log(props);
 
 	return (
 		<div className="modal" tabIndex="-1" role="dialog" style={{ display: props.show ? "inline-block" : "none" }}>

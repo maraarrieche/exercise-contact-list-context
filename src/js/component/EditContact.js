@@ -10,6 +10,7 @@ export const EditContact = props => {
 		address: "",
 		phone: ""
 	});
+	console.log(contact);
 
 	return (
 		<div className="modal" role="dialog" style={{ display: props.show ? "inline-block" : "none" }}>
